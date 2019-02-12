@@ -43,7 +43,7 @@ import {
 	GithubIcon,
 	LinkedinIcon,
 	PlusSquareIcon,
-	FileTextIcon
+	FileTextIcon,
 } from 'vue-feather-icons';
 import DogIcon from './assets/dog.svg';
 
@@ -53,7 +53,7 @@ export default {
 		LinkedinIcon,
 		PlusSquareIcon,
 		DogIcon,
-		FileTextIcon
+		FileTextIcon,
 	},
 	methods: {
 		beforeLeave(element) {
@@ -68,8 +68,8 @@ export default {
 		},
 		afterEnter(element) {
 			element.style.height = 'auto';
-		}
-	}
+		},
+	},
 };
 </script>
 
@@ -78,7 +78,7 @@ export default {
 	width: 100vw;
 	max-width: 100%;
 	> nav {
-		background-color: #212121;
+		background-color: #222;
 		color: #009688;
 		position: sticky;
 		top: 0;

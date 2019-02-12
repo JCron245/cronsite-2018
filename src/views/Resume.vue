@@ -77,15 +77,15 @@ import education from '../assets/education.json';
 
 export default {
 	components: {
-		PlusSquareIcon
+		PlusSquareIcon,
 	},
 	data() {
 		return {
 			jobs: employment.jobs,
-			schools: education.schools
+			schools: education.schools,
 		};
 	},
-	name: 'resume'
+	name: 'resume',
 };
 </script>
 

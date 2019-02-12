@@ -2,7 +2,7 @@
   <div class="dogs">
     <div class="grid">
       <img
-        src="@/assets/hades.jpg"
+        src="@/assets/hades.png"
         title="Hades"
         alt="My dog Hades"
       >
