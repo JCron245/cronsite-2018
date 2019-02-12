@@ -34,7 +34,10 @@ export default {
 <style lang="scss" scoped>
 .dogs {
 	width: 80vw;
-	max-width: 1080px;
+	@media only screen and (max-width: 767px) {
+		width: 100vw;
+	}
+	max-width: 1200px;
 	margin: 0 auto;
 	background-color: transparent;
 	padding: 1rem;

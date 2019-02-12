@@ -1,31 +1,29 @@
 <template>
   <div id="app">
-    <header id="nav">
-      <h1>
-        <router-link to="/">Jon Cornwell</router-link>
-      </h1>
-
-			<router-link to="">
-				<file-text-icon></file-text-icon>
-				<span>Blog</span>
-			</router-link>
-
-      <a href="https://github.com/JCron245">
-        <github-icon></github-icon>
-        <span>Github</span>
-      </a>
-
-      <a href="https://www.linkedin.com/in/jonathon-cornwell-058a38bb">
-        <linkedin-icon></linkedin-icon>
-        <span>Linkedin</span>
-      </a>
-
-      <router-link to="/dogs">
-				<dog-icon></dog-icon>
-				<span>Dogs</span>
-      </router-link>
-
-    </header>
+    <b-navbar toggleable="md">
+      <b-navbar-brand to="/" class="title">Jon Cornwell</b-navbar-brand>
+      <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+      <b-collapse is-nav id="nav_collapse">
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item href="#">
+            <file-text-icon></file-text-icon>
+            <span>Blog</span>
+          </b-nav-item>
+          <b-nav-item href="https://github.com/JCron245">
+            <github-icon></github-icon>
+            <span>Github</span>
+          </b-nav-item>
+          <b-nav-item href="https://www.linkedin.com/in/jonathon-cornwell-058a38bb">
+            <linkedin-icon></linkedin-icon>
+            <span>Linkedin</span>
+          </b-nav-item>
+          <b-nav-item to="/dogs">
+            <dog-icon></dog-icon>
+            <span>Dogs</span>
+          </b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
     <main>
       <transition
         name="fade"
@@ -34,14 +32,19 @@
         @enter="enter"
         @afterEnter="afterEnter"
       >
-        <router-view />
+        <router-view/>
       </transition>
     </main>
   </div>
 </template>
 
 <script>
-import { GithubIcon, LinkedinIcon, PlusSquareIcon, FileTextIcon } from 'vue-feather-icons';
+import {
+	GithubIcon,
+	LinkedinIcon,
+	PlusSquareIcon,
+	FileTextIcon
+} from 'vue-feather-icons';
 import DogIcon from './assets/dog.svg';
 
 export default {
@@ -74,11 +77,7 @@ export default {
 #app {
 	width: 100vw;
 	max-width: 100%;
-	> #nav {
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-		width: 100%;
+	> nav {
 		background-color: #212121;
 		color: #009688;
 		position: sticky;
@@ -90,6 +89,9 @@ export default {
 			padding: 0.25rem 0.05rem;
 			margin: 0 0.5rem;
 			border-bottom: 1px solid #009688;
+			@media only screen and (max-width: 767px) {
+				border-bottom: 0;
+			}
 			color: #009688;
 			svg {
 				width: 1rem;
@@ -100,13 +102,12 @@ export default {
 				vertical-align: middle;
 			}
 		}
-		h1 {
-			margin: 0;
-			padding: 0;
-			margin-right: auto;
-			a {
-				border: 0;
-			}
+		button {
+			background-color: #009688;
+			border-color: #009688;
+		}
+		.title {
+			border-bottom: 0;
 		}
 	}
 	.fade-enter-active,

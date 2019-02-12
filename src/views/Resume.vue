@@ -38,14 +38,8 @@
             <p>{{ job.title }}</p>
             <p>{{ job.startDate }} - {{ job.endDate }}</p>
           </div>
-          <ul
-            :key="index"
-            :aria-labelledby="'job-name-' + index"
-          >
-            <li
-              v-for="item in job.infoList"
-              :key="item"
-            >
+          <ul :key="index" :aria-labelledby="'job-name-' + index">
+            <li v-for="item in job.infoList" :key="item">
               <plus-square-icon></plus-square-icon>
               <span>{{ item }}</span>
             </li>
@@ -64,14 +58,8 @@
             <p>{{ school.degree }}</p>
             <p>{{ school.startDate }} - {{ school.endDate }}</p>
           </div>
-          <ul
-            :key="index"
-            :aria-labelledby="'school-name-' + index"
-          >
-            <li
-              v-for="item in school.infoList"
-              :key="item"
-            >
+          <ul :key="index" :aria-labelledby="'school-name-' + index">
+            <li v-for="item in school.infoList" :key="item">
               <plus-square-icon></plus-square-icon>
               <span>{{ item }}</span>
             </li>
@@ -89,24 +77,27 @@ import education from '../assets/education.json';
 
 export default {
 	components: {
-		PlusSquareIcon,
+		PlusSquareIcon
 	},
 	data() {
 		return {
 			jobs: employment.jobs,
-			schools: education.schools,
+			schools: education.schools
 		};
 	},
-	name: 'resume',
+	name: 'resume'
 };
 </script>
 
 <style lang="scss" scoped>
 .resume {
 	width: 80vw;
+	@media only screen and (max-width: 767px) {
+		width: 95vw;
+	}
 	max-width: 1080px;
 	margin: 0 auto;
-	background-color:#fafafa;
+	background-color: #fafafa;
 	padding: 1rem;
 	font-family: 'Roboto', sans-serif;
 	div {
@@ -120,11 +111,14 @@ export default {
 		font-size: 0.8rem;
 	}
 	.summary > p {
-		padding-left: .2rem;
+		padding-left: 0.2rem;
 	}
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+		@media only screen and (max-width: 767px) {
+			grid-template-columns: 1fr 1.5fr;
+		}
 		grid-auto-rows: auto;
 		gap: 1rem 0.5rem;
 		padding: 0 0.2rem;
@@ -133,14 +127,18 @@ export default {
 			border-left: 1px solid rgba(0, 0, 0, 0.25);
 			li {
 				margin-bottom: 0.3rem;
+				svg {
+					margin-right: 0.5rem;
+					height: 1rem;
+					width: 1rem;
+				}
+				span {
+					vertical-align: middle;
+				}
 			}
-			svg {
-				margin-right: 0.5rem;
-				height: 1rem;
-				width: 1rem;
-			}
-			span {
-				vertical-align: middle;
+			@media only screen and (max-width: 767px) {
+				font-size: 11px;
+				padding: 0 0.5rem;
 			}
 		}
 	}
@@ -154,6 +152,9 @@ h3 {
 }
 h3 {
 	font-weight: normal;
+	@media only screen and (max-width: 767px) {
+		font-size: 1.25rem;
+	}
 }
 p {
 	margin: 0;
