@@ -1,61 +1,76 @@
 {
-  "name": "cronsite-2018",
-  "version": "0.2.0",
-  "private": true,
-  "scripts": {
+	"name": "cronsite-2018",
+	"version": "0.2.0",
+	"private": true,
+	"scripts": {
 		"serve": "vue-cli-service serve",
 		"build": "vue-cli-service build",
-    "build-server": "npm install && vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "bootstrap": "^4.3.0",
-    "bootstrap-vue": "^2.0.0-rc.11",
-    "vue": "^2.6.5",
-    "vue-feather-icons": "^4.10.0",
-    "vue-router": "^3.0.2"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
-    "@vue/cli-service": "^3.4.0",
-    "@vue/eslint-config-airbnb": "^4.0.0",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
-    "vue-svg-loader": "^0.12.0",
-    "vue-template-compiler": "^2.6.5"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "@vue/airbnb"
-    ],
-    "rules": {
-      "indent": [
-        2,
-        "tab"
-      ],
-      "no-tabs": 0
-    },
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 9"
-  ],
-  "engines": {
-    "node": ">= 7.0.0"
-  }
+		"build-server": "npm install && vue-cli-service build",
+		"lint": "vue-cli-service lint"
+	},
+	"dependencies": {
+		"bootstrap": "^4.3.1",
+		"bootstrap-vue": "^2.0.0-rc.17",
+		"vue": "^2.6.10",
+		"vue-feather-icons": "^4.10.0",
+		"vue-router": "^3.0.2"
+	},
+	"devDependencies": {
+		"@vue/cli-plugin-babel": "^3.5.5",
+		"@vue/cli-plugin-eslint": "^3.5.1",
+		"@vue/cli-service": "^3.5.3",
+		"@vue/eslint-config-airbnb": "^4.0.0",
+		"eslint-config-prettier": "^4.1.0",
+		"eslint-plugin-prettier": "^3.0.1",
+		"node-sass": "^4.11.0",
+		"prettier": "^1.16.4",
+		"sass-loader": "^7.1.0",
+		"vue-svg-loader": "^0.12.0",
+		"vue-template-compiler": "^2.6.10"
+	},
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"node": true
+		},
+		"extends": [
+			"plugin:vue/essential",
+			"@vue/airbnb",
+			"plugin:prettier/recommended"
+		],
+		"rules": {
+			"indent": [
+				2,
+				"tab"
+			],
+			"no-tabs": 0
+		},
+		"parserOptions": {
+			"parser": "babel-eslint"
+		}
+	},
+	"postcss": {
+		"plugins": {
+			"autoprefixer": {}
+		}
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"not ie <= 9"
+	],
+	"engines": {
+		"node": ">= 7.0.0"
+	},
+	"prettier": {
+		"printWidth": 140,
+		"tabWidth": 2,
+		"useTabs": true,
+		"semi": true,
+		"singleQuote": true,
+		"trailingComma": "none",
+		"bracketSpacing": true,
+		"jsxBracketSameLine": true,
+		"arrowParens": "avoid"
+	}
 }

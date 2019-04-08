@@ -17,6 +17,10 @@
             <linkedin-icon></linkedin-icon>
             <span>Linkedin</span>
           </b-nav-item>
+          <b-nav-item href="http://croncolor.com">
+						<edit2-icon></edit2-icon>
+            <span>Color Tool</span>
+          </b-nav-item>
           <b-nav-item to="/dogs">
             <dog-icon></dog-icon>
             <span>Dogs</span>
@@ -44,6 +48,7 @@ import {
 	LinkedinIcon,
 	PlusSquareIcon,
 	FileTextIcon,
+	Edit2Icon
 } from 'vue-feather-icons';
 import DogIcon from './assets/dog.svg';
 
@@ -54,6 +59,7 @@ export default {
 		PlusSquareIcon,
 		DogIcon,
 		FileTextIcon,
+		Edit2Icon
 	},
 	methods: {
 		beforeLeave(element) {
