@@ -1,44 +1,49 @@
 {
-	"jobs": [{
-		"name": "Elevated Software",
-		"title": "Senior Developer",
-		"startDate": "06/2017",
-		"endDate": "Present",
-		"infoList": [
-			"Working on new IP for travel industry",
-			"Web/Native applications in Angular",
-			"Rest API",
-			"Technology: Javascript, Typescript, Angular, Java"
-		]
-	}, {
-		"name": "Blndspt",
-		"title": "Full Stack Engineer - Dev Lead",
-		"startDate": "10/2016",
-		"endDate": "Present",
-		"infoList": [
-			"Contracted work for MasterCard In Control Application",
-			"ADA/Section 508 Compliance",
-			"Migration of AngularJS to Angular 2",
-			"Technology: Java, Javascript, GWT, Struts, JSP, AngularJS, Angular, React"
-		]
-	}, {
-		"name": "wreetco",
-		"title": "Application Engineer",
-		"startDate": "03/2015",
-		"endDate": "08/2016",
-		"infoList": [
-			"Design, development and deployment of mobile applications and linux servers using Cordova, Ionic, AngularJS, Apache, Passenger, and MongoDB",
-			"Writing web and native apps using Ruby on Rails and MEAN",
-			"Custom hardware design utilizing Raspberry Pi's, Arudino microcontrollers, and sensors"
-		]
-	}, {
-		"name": "American Financing Corporation",
-		"title": "Web Developer",
-		"startDate": "06/2012",
-		"endDate": "06/2014",
-		"infoList": [
-			"Developed public and internal web applications using PHP, HTML, CSS, and Javascript",
-			"Worked closely with marketing team to improve SEO and website usability"
-		]
-	}]
+	"jobs": [
+		{
+			"name": "Elevated Software",
+			"title": "Senior Developer",
+			"startDate": "06/2017",
+			"endDate": "Present",
+			"infoList": [
+				"Working on new IP for travel industry",
+				"Web/Native applications in Angular",
+				"Rest API",
+				"Technology: Javascript, Typescript, Angular, Java"
+			]
+		},
+		{
+			"name": "Blndspt",
+			"title": "Full Stack Engineer - Dev Lead",
+			"startDate": "10/2016",
+			"endDate": "Present",
+			"infoList": [
+				"Contracted work for MasterCard In Control Application",
+				"ADA/Section 508 Compliance",
+				"Migration of AngularJS to Angular 2",
+				"Technology: Java, Javascript, GWT, Struts, JSP, AngularJS, Angular, React"
+			]
+		},
+		{
+			"name": "wreetco",
+			"title": "Application Engineer",
+			"startDate": "03/2015",
+			"endDate": "08/2016",
+			"infoList": [
+				"Design, development and deployment of mobile applications and linux servers using Cordova, Ionic, AngularJS, Apache, Passenger, and MongoDB",
+				"Writing web and native apps using Ruby on Rails and MEAN",
+				"Custom hardware design utilizing Raspberry Pi's, Arudino microcontrollers, and sensors"
+			]
+		},
+		{
+			"name": "American Financing Corporation",
+			"title": "Web Developer",
+			"startDate": "06/2012",
+			"endDate": "06/2014",
+			"infoList": [
+				"Developed public and internal web applications using PHP, HTML, CSS, and Javascript",
+				"Worked closely with marketing team to improve SEO and website usability"
+			]
+		}
+	]
 }

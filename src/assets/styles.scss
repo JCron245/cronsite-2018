@@ -10,18 +10,16 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-
-	&::-webkit-scrollbar {
-		display: none; // Safari and Chrome (and soon Edge)
-	}
-}
-body {
-	background-image: url('./forest-haze.jpg');
+	background: linear-gradient(66deg, rgba(0,150,136, 0.05) 0%, rgba(6,144,131, 0.05) 33.333%,rgba(34,34,34, 0.05) 33.333%, rgba(17,133,122, 0.05) 66.666%,rgba(22,127,118, 0.05) 66.666%, rgba(28,122,113, 0.05) 99.999%),linear-gradient(130deg, rgba(34,116,109, 0.05) 0%, rgba(39,111,104, 0.05) 33.333%,rgba(34,34,34, 0.05) 33.333%, rgba(51,99,95, 0.05) 66.666%,rgba(0,150,136, 0.05) 66.666%, rgba(6,144,131, 0.05) 99.999%),linear-gradient(72deg, rgba(34,34,34, 0.05) 0%, rgba(17,133,122, 0.05) 33.333%,rgba(22,127,118, 0.05) 33.333%, rgba(28,122,113, 0.05) 66.666%,rgba(34,116,109, 0.05) 66.666%, rgba(39,111,104, 0.05) 99.999%),linear-gradient(139deg, rgba(34,34,34, 0.05) 0%, rgba(51,99,95, 0.05) 33.333%,rgba(0,150,136, 0.05) 33.333%, rgba(6,144,131, 0.05) 66.666%,rgba(34,34,34, 0.05) 66.666%, rgba(17,133,122, 0.05) 99.999%),linear-gradient(111deg, rgba(22,127,118, 0.05) 0%, rgba(28,122,113, 0.05) 33.333%,rgba(34,116,109, 0.05) 33.333%, rgba(39,111,104, 0.05) 66.666%,rgba(34,34,34, 0.05) 66.666%, rgba(51,99,95, 0.05) 99.999%),linear-gradient(90deg, rgb(0,150,136),rgb(51,99,95));
+	// background-image: url('./forest-haze.jpg');
 	height: 100%;
 	max-height: 100%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	&::-webkit-scrollbar {
+		display: none; // Safari and Chrome (and soon Edge)
+	}
 }
 a {
 	color: #009688;
@@ -32,9 +30,6 @@ a {
 }
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
 	color: #009688;
 }

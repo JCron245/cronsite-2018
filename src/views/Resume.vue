@@ -1,73 +1,72 @@
 <template>
-  <section class="resume">
-    <!-- Personal Info -->
-    <address class="info">
-      <p>1740 Depew St. Edgewater, CO</p>
-      <a href="mailto:jonnmb@gmail.com">jonnmb@gmail.com</a>
-      <a href="tel:+01-435-862-1179">(435)862-1179</a>
-    </address>
+	<section class="resume">
+		<!-- Personal Info -->
+		<address class="info">
+			<p>1740 Depew St. Edgewater, CO</p>
+			<a href="mailto:jonnmb@gmail.com">jonnmb@gmail.com</a>
+			<a href="tel:+01-435-862-1179">(435)862-1179</a>
+		</address>
 
-    <!-- Summary -->
-    <div class="summary">
-      <h2>Summary</h2>
-      <p>
-        I am a full-stack developer familiar with a variety of platforms and languages.
-        I’m experienced with the entire application lifecycle from the conception of the
-        application, development, all the way to the deployment.
-      </p>
-    </div>
+		<!-- Summary -->
+		<div class="summary">
+			<h2>Summary</h2>
+			<p>
+				I am a full-stack developer familiar with a variety of platforms and languages. I’m experienced with the entire application
+				lifecycle from the conception of the application, development, all the way to the deployment.
+			</p>
+		</div>
 
-    <!-- Skills -->
-    <div class="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Languages: Javascript, Typescript, Java</li>
-        <li>Frameworks: Angular, Vue, Bootstrap, Materialize</li>
-        <li>System: Linux, OSX, Windows, Node</li>
-        <li>Other: HTML, CSS, SASS/SCSS, REST, Accessibility Compliance</li>
-      </ul>
-    </div>
+		<!-- Skills -->
+		<div class="skills">
+			<h2>Skills</h2>
+			<ul>
+				<li>Languages: Javascript, Typescript, Java</li>
+				<li>Frameworks: Angular, Vue, Bootstrap, Materialize</li>
+				<li>System: Linux, OSX, Windows, Node</li>
+				<li>Other: HTML, CSS, SASS/SCSS, REST, Accessibility Compliance</li>
+			</ul>
+		</div>
 
-    <!-- Employment History -->
-    <div class="employment-history">
-      <h2>Employment History</h2>
-      <div class="grid">
-        <template v-for="(job, index) in jobs">
-          <div :key="job.name">
-            <h3 :id="'job-name-' + index">{{ job.name }}</h3>
-            <p>{{ job.title }}</p>
-            <p>{{ job.startDate }} - {{ job.endDate }}</p>
-          </div>
-          <ul :key="index" :aria-labelledby="'job-name-' + index">
-            <li v-for="item in job.infoList" :key="item">
-              <plus-square-icon></plus-square-icon>
-              <span>{{ item }}</span>
-            </li>
-          </ul>
-        </template>
-      </div>
-    </div>
+		<!-- Employment History -->
+		<div class="employment-history">
+			<h2>Employment History</h2>
+			<div class="grid">
+				<template v-for="(job, index) in jobs">
+					<div :key="job.name">
+						<h3 :id="'job-name-' + index">{{ job.name }}</h3>
+						<p>{{ job.title }}</p>
+						<p>{{ job.startDate }} - {{ job.endDate }}</p>
+					</div>
+					<ul :key="index" :aria-labelledby="'job-name-' + index">
+						<li v-for="item in job.infoList" :key="item">
+							<plus-square-icon></plus-square-icon>
+							<span>{{ item }}</span>
+						</li>
+					</ul>
+				</template>
+			</div>
+		</div>
 
-    <!-- Education -->
-    <div class="education-history">
-      <h2>Education</h2>
-      <div class="grid">
-        <template v-for="(school, index) in schools">
-          <div :key="school.name">
-            <h3 :id="'school-name-' + index">{{ school.name }}</h3>
-            <p>{{ school.degree }}</p>
-            <p>{{ school.startDate }} - {{ school.endDate }}</p>
-          </div>
-          <ul :key="index" :aria-labelledby="'school-name-' + index">
-            <li v-for="item in school.infoList" :key="item">
-              <plus-square-icon></plus-square-icon>
-              <span>{{ item }}</span>
-            </li>
-          </ul>
-        </template>
-      </div>
-    </div>
-  </section>
+		<!-- Education -->
+		<div class="education-history">
+			<h2>Education</h2>
+			<div class="grid">
+				<template v-for="(school, index) in schools">
+					<div :key="school.name">
+						<h3 :id="'school-name-' + index">{{ school.name }}</h3>
+						<p>{{ school.degree }}</p>
+						<p>{{ school.startDate }} - {{ school.endDate }}</p>
+					</div>
+					<ul :key="index" :aria-labelledby="'school-name-' + index">
+						<li v-for="item in school.infoList" :key="item">
+							<plus-square-icon></plus-square-icon>
+							<span>{{ item }}</span>
+						</li>
+					</ul>
+				</template>
+			</div>
+		</div>
+	</section>
 </template>
 
 <script>
@@ -77,15 +76,15 @@ import education from '../assets/education.json';
 
 export default {
 	components: {
-		PlusSquareIcon,
+		PlusSquareIcon
 	},
 	data() {
 		return {
 			jobs: employment.jobs,
-			schools: education.schools,
+			schools: education.schools
 		};
 	},
-	name: 'resume',
+	name: 'resume'
 };
 </script>
 

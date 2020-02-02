@@ -11,7 +11,7 @@ export default new Router({
 			// route level code-splitting
 			// this generates a separate chunk (about.[hash].js) for this route
 			// which is lazy-loaded when the route is visited.
-			component: () => import(/* webpackChunkName: "Resume" */ './views/Resume.vue'),
+			component: () => import(/* webpackChunkName: "Resume" */ './views/Resume.vue')
 		},
 		{
 			path: '/dogs',
@@ -19,7 +19,7 @@ export default new Router({
 			// route level code-splitting
 			// this generates a separate chunk (about.[hash].js) for this route
 			// which is lazy-loaded when the route is visited.
-			component: () => import(/* webpackChunkName: "Dogs" */ './views/Dogs.vue'),
-		},
-	],
+			component: () => import(/* webpackChunkName: "Dogs" */ './views/Dogs.vue')
+		}
+	]
 });

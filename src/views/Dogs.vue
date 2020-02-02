@@ -1,33 +1,17 @@
 <template>
-  <div class="dogs">
-    <div class="grid">
-      <img
-        src="@/assets/hades.png"
-        title="Hades"
-        alt="My dog Hades"
-      >
-      <img
-        src="@/assets/astros-collage.png"
-        title="Astros"
-        alt="Collage of my dog Astros"
-      >
-      <img
-        src="@/assets/astros-window.png"
-        title="Astros"
-        alt="Astros looking out a window"
-      >
-      <img
-        src="@/assets/hades-puppy.png"
-        title="Hades"
-        alt="Hades sleeping as a puppy"
-      >
-    </div>
-  </div>
+	<div class="dogs">
+		<div class="grid">
+			<img src="@/assets/hades.png" title="Hades" alt="My dog Hades" />
+			<img src="@/assets/astros-collage.png" title="Astros" alt="Collage of my dog Astros" />
+			<img src="@/assets/astros-window.png" title="Astros" alt="Astros looking out a window" />
+			<img src="@/assets/hades-puppy.png" title="Hades" alt="Hades sleeping as a puppy" />
+		</div>
+	</div>
 </template>
 
 <script>
 export default {
-	name: 'home',
+	name: 'home'
 };
 </script>
 
@@ -50,8 +34,7 @@ export default {
 		padding: 0 0.2rem;
 		img {
 			width: 100%;
-			box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-				0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+			box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 		}
 	}
 }
